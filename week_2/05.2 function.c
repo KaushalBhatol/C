@@ -1,4 +1,4 @@
-#include "local.h"
+#include "../local.h"
 
 void star(int n)
 {
@@ -16,7 +16,7 @@ void star(int n)
 int main()
 {
     printf("How much stars you want : ");
-    int n = usrValue();
+    int n = usrIntInputValue();
     star(n);
     return 0;
 }
