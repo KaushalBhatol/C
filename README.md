@@ -27,4 +27,4 @@ week 3 | 06/03/2021 |
 * This is not professional documentation, It was only for learning C language nothing else.
 
 [my-document]: https://github.com/KaushalBhatol/C/tree/master/Documents/Self%20Docs
-[material-folder]: https://github.com/KaushalBhatol/C/tree/master/Documents/Material
+[material-folder]: Documents/Material
