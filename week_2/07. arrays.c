@@ -39,7 +39,5 @@ int main()
         printf("\n");
     }
 
-    // marks[line][row]
-
     return 0;
 }
