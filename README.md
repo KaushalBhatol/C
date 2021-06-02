@@ -36,11 +36,6 @@ All of the c files are created by the author so you can use them as your choice.
 
 Reference pdfs are downloaded from the web so please use pdf files as your reference only.
 
-<!-- Link area -->
-## Connect with ME 📱
-
-[Instagram](https://instagram.com/kaushal_bhatol)
-
 ## External sites
 
 * [geeksforgeeks](https://www.geeksforgeeks.org/)
@@ -48,4 +43,9 @@ Reference pdfs are downloaded from the web so please use pdf files as your refer
 
 > This sites are used for pictuers and another content on this repository. including host site for preventing any type of copyright issues.
 
+## Connect with ME 📱
+
+[Instagram](https://instagram.com/kaushal_bhatol)
+
+<!-- link area -->
 [reference-folder]: reference/

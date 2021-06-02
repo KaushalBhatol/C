@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
     printf("Enter Second Value\n");
     scanf("%d", &b);
 
-    printf("answer is %d", a+b);
+    printf("answer is %d", a + b);
 
     return 0;
 }
