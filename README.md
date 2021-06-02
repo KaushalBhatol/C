@@ -26,5 +26,5 @@ week 3 | 06/03/2021 |
 * for preventing from copyright we also added sorce sites in second page of [C_language_By_Kaushal.docx][my-document] file. and also some pictures bottom added source site url.
 * This is not professional documentation, It was only for learning C language nothing else.
 
-[my-document]: https://github.com/KaushalBhatol/C/tree/master/Documents/Self%20Docs
+[my-document]: Documents/Self%20Docs
 [material-folder]: Documents/Material
