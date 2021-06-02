@@ -1,0 +1,7 @@
+#!/bin/bash
+# for run this just command ./folder_clean_bash on file directory wher this file placed.
+rm -r */*.out && echo "cleared */*.out files"
+rm -r */*/*.out && echo "cleared */*/*.out files"
+rm -r */*/*/*.out && echo "cleared */*/*/*.out files"
+echo "Ignore errors when files are not thair it shows"
+printf '\n\t Worktree is free with .out files..\n\n'
