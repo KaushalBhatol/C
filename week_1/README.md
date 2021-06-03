@@ -256,4 +256,4 @@ sizeof() | Returns the size of variable. | sizeof(a), where a is an integer, wil
 ![c operators precedence][c_operators_precedence]
 
 <!-- images -->
-[c_operators_precedence]: assets/c_operators_precedence.png
+[c_operators_precedence]: ../assets/c_operators_precedence.png
