@@ -4,11 +4,14 @@
 
 no | name
 ---|-----------------------
-00  | [Basics of C language](#basics)
+00 | [Basics of C language](#basics)
 01 | [hello world](#hello-world)
 02 | [Get value from user](#get-value-from-user)
-03 | [Variables](#Variables)
-04 | [Operators](#Operators)
+03 | [Variables](#variables)
+04 | [Operators](#operators)
+05 | [Formate Spacifier](#format-specifier)
+06 | [Constant](#constant)
+07 | [Escape sequence](#escape-sequence)
 
 ## Basics
 
@@ -25,7 +28,9 @@ int main(){
 ```
 
 * C language header files are give you hands for your code.
-* C language comments represent with `// comment`
+* C language comments :
+  * single line comment: `// this is single line comment`
+  * multiple line comment: `/* this is multiple line comment */`
 * `return 0` always needed for exit the program.
 
 ### Compile and run
@@ -124,7 +129,7 @@ float b;
 char c;  
 ```
 
-Here, a, b, c are variables. The int, float, char are the data types.
+Hear, a, b, c are variables. The int, float, char are the data types.
 
 ### Rules for defining variables
 
@@ -175,14 +180,14 @@ An Operators is a symbol used to perform operations in given programming languag
 
 ### Types of operators
 
-1. [Arithmetic operators](#1.-Arithmetic-operators)
-2. [Relation Operators](#2.-Relation-operator)
-3. [Logical Operators](#3.-Logical-operator)
-4. [Bit wise operators](#4.Bit-wise-operators)
-5. [Assignment operators](#5.-Assignment-operators)
-6. [Miscellaneous](#6-Miscellaneous)
+1. [Arithmetic operators](#arithmetic-operators)
+2. [Relation Operators](#relation-operator)
+3. [Logical Operators](#logical-operator)
+4. [Bit wise operators](#bit-wise-operators)
+5. [Assignment operators](#assignment-operators)
+6. [Miscellaneous](#miscellaneous)
 
-### 1. Arithmetic operators
+### Arithmetic operators
 
 * This operators are basic operators for day to day life.
 
@@ -194,7 +199,7 @@ Operators | Description
 /| Division
 %| modules
 
-### 2. Relation operator
+### Relation operator
 
 Operators|Description
 ---------|-----------
@@ -207,7 +212,7 @@ Operators|Description
 
 >Note: mostly this operators are used in if, else statement.
 
-### 3. Logical operator
+### Logical operator
 
 Operators | Description | Example
 ----------|-------------|--------
@@ -215,7 +220,7 @@ Operators | Description | Example
 &#8741;|Logical “OR” operator, if any of these two operands is none-zero, Then condition become true.|a&#8741;b
 ! |Logical “NOT” operator, It is used to reverse the logical state of its operand, if condition is true..|!a
 
-### 4.Bit wise operators
+### Bit wise operators
 
 * Bit-wise operator are functioning on bit.
 
@@ -232,7 +237,7 @@ Value A | Value B | A&B | A&#8739;B | A^B
   * << is the binary left shift operator
   * &#62;&#62; is the binary right shift operator
 
-### 5. Assignment operators
+### Assignment operators
 
 Operators | Description
 ----------|------------
@@ -242,7 +247,7 @@ Operators | Description
 *&#61; | Multiply AND assignment operator. It multiples the right operands from the left to the result is assignment to the left operand.
 /&#61; | Divide AND assignment operator. It divide the right operands from the left to the result is assignment to the left operand.
 
-### 6. Miscellaneous
+### Miscellaneous
 
 Operators | Description | Example
 ----------|-------------|--------
@@ -255,5 +260,57 @@ sizeof() | Returns the size of variable. | sizeof(a), where a is an integer, wil
 
 ![c operators precedence][c_operators_precedence]
 
+> Attachments 📎
+
+* [08.1 Oprators Arthmetic and relation.c](08.1_Oprators_Arthmetic_and_relation.c)
+* [08.2 Oprators logical and Bitwise.c](08.2_OpratorsLogicalAndBitwise.c)
+
+## Format Specifier
+
+* The Format specifier is a string used in the formatted input and output functions. The format string determines the format of the input and output. The format string always starts with a '%' character.
+* `Pritf(“This is a good boy %a.bf”, var); ` Will print var with b decimale in a “a” character space
+* ex : 'printf("%5.2f", a);`
+  * prints out the value of amount in floating point format. The format spaciefication __%5.2f__ tells the compiler that the output must be in floating point, With five places in all and two places to the right of the decimal point.
+
+format | work
+-------|------
+%c     | character print
+%d     | integer print
+%f     | float print
+%l     | long print
+%lf    | double print
+%LF    | long double print
+
+> Attachments 📎
+
+* [09 FormatSpacifier.c](09_FormatSpacifier.c)
+
+## Constant
+
+* A constant is a value or variable that can’t be changed in the program.
+  * Example: 15, ‘a’, 3.4, “Name, etc..
+* There are Two ways to define constant in C Program.
+  1. Constant Keyword: `const float b = 7.499;`
+  2. `#define` preprocessor: `#define PI 3.14`
+
+The #define Directive:
+
+* A __#define__ instruction defines value to a _symbolic constant_ for use in the program. Whenever a symbolic name is encountered, the compiler substitutes the value associated with the name automatically. To change the value, we have to simply change the definition.
+* A __#define__ is a preprocessor compiler directive and not a statement. Therfore __#define__ lines should not end with a semicolon.
+* __#define__ instrucions are usually placed at the beginnig before the __main()__ function.
+
+> Attachments 📎
+
+* [10 constant.c](10_constant.c)
+
+## Escape sequence
+
+* An escape sequence inn C programming, language is a sequence of characters.
+* It doesn’t represent itself when used inside string literal or character.
+* It is composed of two or more characters string with backslash `\`.
+
+![escap sequance box][escape_sequence]
+
 <!-- images -->
-[c_operators_precedence]: ../assets/c_operators_precedence.png
+[c_operators_precedence]: ../assets/images/1.1.png
+[escape_sequence]: ../assets/images/1.2.png

@@ -1,10 +1,11 @@
-<h1> Vscode Tricks </h1>
+# Vscode Tricks
 
 ## top extantions
--  c/c++ (microsoft)
--  Code Runner
+
+* c/c++ (microsoft)
+* Code Runner
 
 ## shortcuts
-- writing main, intellise write basic structure of c.
-- useing code Runner, simpliy compile and run program.
 
+* writing main, intellise write basic structure of c.
+* useing code Runner, simpliy compile and run program.

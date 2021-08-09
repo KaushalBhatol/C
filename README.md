@@ -10,11 +10,10 @@
 
 ## Weeks 🗓
 
- Date       | Contents | Week
-------------|----------|----------
-04/10/2021  | variables, float, char, int, operator | [week 1](week_1)
-05/02/2021  | break, continue, goto, typecasting, function, array | [week 2](week_2)
-06/03/2021  |   | [week 3](week_3)
+ Date       | Contents                                              | Week
+------------|-------------------------------------------------------|----------
+04/10/2021  | variables, float, char, int, operator                 | [week 1](week_1/README.md)
+05/02/2021  | break, continue, goto, typecasting, function, array   | [week 2](week_2/README.md)
 
 ## About 👷‍♂️
 

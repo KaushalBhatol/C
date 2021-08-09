@@ -4,7 +4,7 @@
 int main(int argc, char const *argv[])
 {
     int a = 444;
-    float b = 22.22222;
-    printf("a = %d\n4.0a = %4.0d\nb = %f\n0.2b = %0.2f\n", a, a, b, b);
+    float b = 222.22222;
+    printf("a = %d\n 4.0a = %4.0d\n b = %f\n 4.2b = %4.2f\n", a, a, b, b);
     return 0;
 }
