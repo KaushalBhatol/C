@@ -1,5 +1,9 @@
 #!/bin/bash
-# for run this just command ./folder_clean_bash on file directory wher this file placed.
+# you need creat exicutable this file using 
+# chmod +x ./folder_clean_bash
+# now just run: ./folder_clean_bash
+# for using windows you just need to change .out to .exe file extantion in this file.
+rm -r *.out && echo "cleared *.out files"
 rm -r */*.out && echo "cleared */*.out files"
 rm -r */*/*.out && echo "cleared */*/*.out files"
 rm -r */*/*/*.out && echo "cleared */*/*/*.out files"
