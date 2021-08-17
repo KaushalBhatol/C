@@ -1,13 +1,11 @@
-<!-- 
-Written By Kaushal Bhatol.
-Email: kaushal.bhatol@outlook.com
-Purpose: For learning c language in modern way and helps to other beginner.
-Official repository: https://github.com/KaushalBhatol/C
-Blog: kaushal.iblogger.org
-Site: kaushal.unaux.com
--->
+<!------------------------------ 
+  Name: README.md
+  Purpose: Module 1 instructions.
+  Author: Kaushal Bhatol.
+  Date: 2021/08/07 (ISO formate)
+-------------------------------->
 
-# Week 1
+# Module 1
 
 ## index
 
@@ -36,8 +34,11 @@ C language comments :
 * Multiple line comment:
 
 ```c
-/* this is 
-multiple line comment */
+/* 
+This is multiple line comment
+
+You can writ anything hear... compilier just ignore this..
+*/
 ```
 
 Basic rules:
@@ -60,8 +61,9 @@ Basic rules:
 
 ### Compiling and Linking
 
-* UNIX SYSTEM are use __cc__ for compiling, but in modern time used __gcc__ for some advantage.
-* cc and gcc are same work you can use any of them.
+GCC Compiler:
+
+* One of the most popular C compiler is the __GCC__ compiler. which is supplied with Linux but is abailable for many other platforms are well. Using this compiler is similar to using the treditional __UNIX cc__ compiler.
 
 Compiling:
 
@@ -82,6 +84,13 @@ Linking:
 * we may also achieve this by spacifying an option in the cc command as follows:
   * `gcc -o name filename.c`
 * This will store the executable object code in the file name and prevernt the old file `a.out` from being destroyed.
+
+> Q&A
+
+* __Q: What does GCC stand for?__
+  * A: GCC originally stood for "GNU C Compiler". It now stand for "GNU Compiler Collection." because the current version of GCC compiles program written in a variety of languages. including Ada, C, C++, Fortran, Java, and objective-C.
+* __Q: What's the big deal about GCC, anyway?__
+  * A: GCC is significiant for many reasons.
 
 ## Hello World
 
@@ -248,7 +257,18 @@ The example of declaring the variable is given below:
 ```c
 int a;  
 float b;  
-char c;  
+char c; 
+
+// assigning values method 1
+// first declare then assign
+int a;
+a = 44;
+// method 2
+// declare and asign at same time
+int a = 44;
+float b = 43.33;
+float c = 48.44f; // only float support f after value, This helps to know this is flot value.
+                  // output are always same with or without f.
 ```
 
 Hear, a, b, c are variables. The int, float, char are the data types.
@@ -432,6 +452,18 @@ The __#define__ Directive:
 * It is composed of two or more characters string with backslash `\`.
 
 ![escap sequance box][escape_sequence]
+
+Example:
+
+```c
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    printf("\t Horizontal tab\n");
+    return 0;
+}
+```
 
 <!-- images -->
 [c_basic_structure]: ../assets/images/1.0.png

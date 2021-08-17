@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
         printf("5>3");
     }
     else {
-        printf("condition are false");
+        printf("condition are Mismatch");
     }
     return 0;
 }
