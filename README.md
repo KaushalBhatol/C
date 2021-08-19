@@ -6,7 +6,6 @@
 
 * 📖 Learning status: Running 📗
 * 🕐 Using ISO Date Format `yyyy/mm/dd`
-* 📂 For External pdf refrences [click hear][reference-folder]
 
 ## Modules 📑
 
@@ -24,8 +23,6 @@ I'm not used to creating this type of documents but still for my future referenc
 I'm also a beginner when I started to write this. so forget some of the mistakes and focus on what you want to find.
 
 My learning is based on modules, so it was simple to find which kind of file you want and every module has its own exercises also check it out in module folders 😎.
-
-Some of the references as pdf which I found from the web are also available to hear just [follow this link](assets/reference/) to get that.
 
 ## Licence 🔐
 

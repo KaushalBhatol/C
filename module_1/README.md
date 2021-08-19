@@ -20,6 +20,7 @@ no | name
 06 | [Formate Spacifier](#format-specifier)
 07 | [Constant](#constant)
 08 | [Escape sequence](#escape-sequence)
+09 | [If else](#if-else)
 
 ## Basics
 
@@ -179,7 +180,7 @@ cc filename-1.c ... filename-n.c
 
 ```bash
 cc -c mod1.c
-cc -c mode.c
+cc -c mod2.c
 ```
 
 * Will compile the source files _mod1.c_ and _mod2.c_ objects files _mod1.o_ and _mod2.o_. They can be linked together by the command
@@ -196,7 +197,7 @@ cc mod1.c mod2.o
 
 * Only mod1.c is compiled and then linked with the object file mod2.o. This approch is useful whenn one of the multiple source files need to be changed and recompiled or an alrady existing object files is to be used along with the program to be compiled.
 
-Ex:
+Exp:
 
 * We need to creat two c files, main.c and multipli.c
 
@@ -465,7 +466,142 @@ int main(int argc, char const *argv[])
 }
 ```
 
+## If else
+
+* The if statement allows a progarm to choose between two alternatives by testing the value of an expressin.
+* There is 4 methods for writng if else.
+  1. [if statement](#if-statement)
+  2. [if else statement](#if-else-statement)
+  3. [Cascaded if](#cascaded-if)
+  4. [Nested if else](#nested-if-else)
+
+![Decison Making][if-else-decision-making]
+
+### if Statement
+
+* If statement is the most simple decision making statement. It is used to decide whether a
+certain statement or block of statements will be executed or not. If a certain condition is
+true then a block of statement is executed otherwise not.
+
+Exp:
+
+```c
+if(i == 5)
+{
+  printf("You entered 5 as value");
+}
+```
+
+* 📄 [if statement.c](11_if.c)
+
+Flow Chart:
+
+![If statement flow chart][if-statement]
+
+* Here, condition after evaluation will be either true or
+false. C if statement accepts Boolean values – if the
+value is true then it will execute the block of statements
+below it otherwise not. If we do not provide the curly
+braces `‘{‘` and `‘}’` after if(condition) then by default if
+statement will consider the first immediately below
+statement to be inside its block.
+
+### if else statement
+
+* The if statement alone tells us that if a condition is true it will execute a block of
+statements and if the condition is false it won’t. But what if we want to do something else if
+the condition is false. Here comes the C else statement. We can use the else statement
+with if statement to execute a block of code when the condition is false.
+
+Exp:
+
+```c
+if (i<j)
+{
+  max = j;
+}
+else
+{
+  max = i;
+}
+```
+
+* 📄 [if else statement.c](11_if_else.c)
+
+Flow Chart:
+
+![If else statement flow chart][if-else-statement]
+
+### Cascaded if
+
+* The C if statements are executed from
+the top down. As soon as one of the
+conditions controlling the if is true, the
+statement associated with that if is
+executed, and the rest of the C else-if
+ladder is bypassed. If none of the
+conditions are true, then the final else
+statement will be executed.
+
+Exp:
+
+```c
+if (n<0) {
+  printf("n is less than 0\n");
+}
+else if (n ==0 ){
+    printf("n is equalt to 0\n");
+  }
+else {
+  printf("n is greater than 0\n");
+}
+```
+
+* 📄 [cascaded if.c](11_if_cascaded.c)
+
+Flow Chart:
+
+![else if cascaded][if-else-cascaded]
+
+### Nested if else
+
+* A nested if in C is an if statement that is the target of another if statement. Nested if
+statements means an if statement inside another if statement. Yes, both C and C++ allows
+us to nested if statements within if statements, i.e., we can place an if statement inside
+another if statement.
+
+Exp:
+
+```c
+if (i > j){
+    if(i > k){
+      max = i;
+    }
+    else{
+      max = k;
+    }
+}
+else
+  if( j > k){
+    max = j;
+  }
+  else {
+    max = k;
+  }
+```
+
+* 📄 [Nested if else.c](11_if_else_nested.c)
+
+Flow Chart:
+
+![else if nested][if-else-nested]
+
 <!-- images -->
 [c_basic_structure]: ../assets/images/1.0.png
 [c_operators_precedence]: ../assets/images/1.1.png
 [escape_sequence]: ../assets/images/1.2.png
+[if-else-decision-making]: ../assets/images/1.3.png
+[if-statement]: ../assets/images/1.4.png
+[if-else-statement]: ../assets/images/1.5.png
+[if-else-cascaded]: ../assets/images/1.6.png
+[if-else-nested]: ../assets/images/1.7.png
