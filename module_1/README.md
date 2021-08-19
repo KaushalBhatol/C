@@ -494,6 +494,8 @@ if(i == 5)
 
 * 📄 [if statement.c](11_if.c)
 
+* Don't confuse `==` (equality) with `=` (assignment).
+
 Flow Chart:
 
 ![If statement flow chart][if-statement]
@@ -595,6 +597,15 @@ else
 Flow Chart:
 
 ![else if nested][if-else-nested]
+
+> Exercise with answer 🔬
+
+* Q. Give gift to student from there marks.
+conditions :
+  * passed in maths and science. gift rs 45
+  * passed science only. gift rs 15
+  * passed maths only. gift rs 18.
+* A. [Give gift to student from there marks.c](Exercise/04%20if-else%20Give%20gift%20to%20student%20from%20there%20marks.c)
 
 <!-- images -->
 [c_basic_structure]: ../assets/images/1.0.png
