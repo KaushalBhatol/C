@@ -21,6 +21,7 @@ no | name
 07 | [Constant](#constant)
 08 | [Escape sequence](#escape-sequence)
 09 | [If else](#if-else)
+10 | [Switch Case](#switch-case-statement)
 
 ## Basics
 
@@ -606,6 +607,115 @@ conditions :
   * passed science only. gift rs 15
   * passed maths only. gift rs 18.
 * A. [Give gift to student from there marks.c](Exercise/04%20if-else%20Give%20gift%20to%20student%20from%20there%20marks.c)
+
+## Switch Case Statement
+
+Rules:
+
+1. Switch expression __must be int or char__.
+2. Case value __must be int or char__.
+3. Case must come inside switch.
+4. Break is not a must.
+
+Note: If _break_ is not added, code will execute below cases also.
+
+Types:
+
+1. [Switch case without break.](#switch-case-without-break)
+2. [Switch case.](#switch-case)
+3. [Nested switch case](#nested-switch-case)
+
+Syntax:
+
+```c
+switch (n)
+{
+case 1: // code to be executed if n = 1;
+break;
+case 2: // code to be executed if n = 2;
+break;
+default: // code to be executed if n doesn't match any cases
+```
+
+### Switch case without break
+
+* if any of one statemet is truee, compiler also print below cases. when you don't use brack statement.
+
+ex:
+
+```c
+switch (n)
+    {
+    case 3:
+        printf("You entered 3\n");
+    case 5:
+        printf("You entered 5\n");
+    case 8:
+        printf("You entered 8\n");
+    default:
+        printf("Please enter 3, 5 or 8 only.\n");
+    }
+```
+
+* In above example we not used breack statement so if any case is truee compiler also prints below casese.
+* you can try above example with __n = 5__ value.
+
+### Switch case
+
+ex:
+
+```c
+switch (n)
+{
+case 3:
+    printf("You entered 3\n");
+    break;
+case 5:
+    printf("You entered 5\n");
+    break;
+case 8:
+    printf("You entered 8\n");
+    break;
+default:
+    printf("Please enter 3, 5 or 8 only.\n");
+    break;
+}
+```
+
+* We used brak statement in above example, Now if any case is true. compiler only shows that case and ignoring below cases.
+
+### Nested switch case
+
+* Nested switch case is as same as nested if-else statement.
+
+```c
+switch (age)
+{
+case 22:
+    printf("your age is 22\n");
+    switch (marks) // Nested switch
+    {
+    case 33:
+        printf("your maaks is 33\n");
+        break;
+    default:
+        printf("your marks is not 33\n");
+        break;
+    }
+    break;
+case 17:
+    printf("your age is 17\n");
+    break;
+default:
+    printf("Please enter valid age\n");
+}
+```
+
+> Attachments 📎
+
+* [12.1_switch_case.c](12.1_switch_case.c)
+* [12.2_switch_case_with_break.c](12.2_switch_case_with_break.c)
+* [12.3_switch_case_nested.c](12.3_switch_case_nested.c)
 
 <!-- images -->
 [c_basic_structure]: ../assets/images/1.0.png

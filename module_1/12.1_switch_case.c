@@ -1,4 +1,4 @@
-// 04/16/2021, Kushal Bhatol
+// 2021/04/16, Kushal Bhatol
  #include <stdio.h>
 
  int main(int argc, char const *argv[])
